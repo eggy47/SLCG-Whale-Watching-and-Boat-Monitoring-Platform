@@ -13,4 +13,8 @@ export default defineConfig({
             },
         }),
     ],
+    // Add this build block to increase the chunk size warning limit to 1MB (1000kB)
+    build: {
+        chunkSizeWarningLimit: 1000,
+    }
 });
